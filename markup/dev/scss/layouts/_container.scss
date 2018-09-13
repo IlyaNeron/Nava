@@ -1,0 +1,6 @@
+.container {
+  max-width: $base-max-width;
+  margin: 0 auto;
+  padding: $base-padding;
+  @extend %clearfix;
+}

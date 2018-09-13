@@ -1,0 +1,67 @@
+
+$breakpoints: (
+  "xs-phone": 480px,
+  "phone": 768px,
+  "tablet": 1024px,
+  "desktop": 1200px,
+  "widescreen": 1800px
+);
+
+// keywords
+$media-expressions: (
+  "screen": "screen",
+  "print": "print",
+  "handheld": "handheld",
+  "landscape": "(orientation: landscape)",
+  "portrait": "(orientation: portrait)",
+  "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+  "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)"
+);
+
+// ligatured operators ≥ ≤
+
+// Colors
+$white: #fff !default;
+$gray: #5a5a5a !default;
+$pink: #ed145b !default;
+$light-gray: #f4f4f4;
+
+// Fonts
+$base-font-sans-serif: "Lato", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+
+// Body
+$base-background-color: $white !default;
+$font-size-base: 15px !default;
+$font-weight-base: 300 !default;
+$base-line-height: 2 !default;
+$base-min-width: 320px !default;
+$base-color: $gray !default;
+$base-font-family: $base-font-sans-serif;
+
+// Container
+$base-max-width: 1170px !default;
+$base-padding: 0 15px !default;
+
+// Links
+$base-link-color: $pink !default;
+$base-link-font-weight: 400 !default;
+$base-link-hover-color: $pink !default;
+
+// Buttons
+$btn-color: $white !default;
+$btn-border-radius: 24px !default;
+$btn-padding: 15px 15px !default;
+$btn-font-size: 15px !default;
+$btn-font-weight: 700 !default;
+$btn-line-height: 1 !default;
+$btn-background-color: $pink;
+$btn-min-width: 200px;
+
+// Headers
+$h1-font-size: 46px !default;
+$h2-font-size: 38px !default;
+$h3-font-size: 15px !default;
+$h4-font-size: 22px !default;
+$h5-font-size: 18px !default;
+$h6-font-size: 14px !default;
+$headings-font-family: $base-font-sans-serif !default;

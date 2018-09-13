@@ -1,0 +1,22 @@
+.button {
+  color: $btn-color;
+  border-radius: $btn-border-radius;
+  padding: $btn-padding;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  line-height: $btn-line-height;
+  text-transform: uppercase;
+  background-color: $btn-background-color;
+  border: 1px solid transparent;
+  outline: none;
+  @include animate(border-radius);
+  cursor: pointer;
+  min-width: $btn-min-width;
+  display: inline-block;
+  vertical-align: top;
+
+  &:hover {
+    border-radius: 5px;
+  }
+
+}
