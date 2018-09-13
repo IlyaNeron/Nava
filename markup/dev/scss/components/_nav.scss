@@ -1,0 +1,47 @@
+.nav {
+  float: right;
+
+  &-opener {
+    display: none;
+  }
+
+  &-drop {
+    display: inline-block;
+
+    ul {
+      @include inline-space-reset;
+      padding: 12px 35px 12px 0;
+
+      li {
+        display: inline-block;
+        @include inline-space;
+        color: $white;
+        text-transform: uppercase;
+
+        &:not(:last-child) {
+          padding-right: 45px;
+        }
+
+        a {
+          font-weight: bold;
+        }
+
+      }
+
+    }
+
+  }
+
+  .btn-primary {
+    min-width: 145px;
+    padding: 12px 10px;
+    color: $light-gray;
+    border-color: $light-gray;
+
+    &:hover {
+      border-color: $red;
+    }
+
+  }
+
+}

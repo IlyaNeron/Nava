@@ -1,0 +1,44 @@
+.score-section {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 100%;
+  bottom: 5%;
+
+  .score-items {
+    @include inline-space-reset;
+    padding: 30px 0;
+    box-shadow: 0px 0px 30px 0px rgba(52, 52, 52, 0.15);
+    background: $white;
+
+    li {
+      @include inline-space;
+      color: $light-dark;
+      display: inline-block;
+      width: (100%/4);
+      text-align: center;
+      padding: 10px 15px;
+
+      &:not(:last-child) {
+        border-right: 1px solid rgba(113, 113, 113, 0.6);
+      }
+
+      b {
+        display: block;
+        font-weight: bold;
+        margin: 0 0 20px;
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 18px;
+        color: $medium-gray;
+      }
+
+    }
+
+  }
+
+}
+

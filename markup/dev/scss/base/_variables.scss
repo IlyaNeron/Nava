@@ -22,45 +22,55 @@ $media-expressions: (
 
 // Colors
 $white: #fff !default;
-$gray: #5a5a5a !default;
-$pink: #ed145b !default;
-$light-gray: #f4f4f4;
+$light-dark: #343434 !default;
+$red: #e7434e !default;
+$medium-gray: #717171;
+$light-gray: #f9fafe;
 
 // Fonts
-$base-font-sans-serif: "Lato", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+$base-font-sans-serif: "Open Sans", "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
 
 // Body
 $base-background-color: $white !default;
-$font-size-base: 15px !default;
-$font-weight-base: 300 !default;
-$base-line-height: 2 !default;
+$font-size-base: 14px !default;
+$font-weight-base: 400 !default;
+$base-line-height: 1.5 !default;
 $base-min-width: 320px !default;
-$base-color: $gray !default;
+$base-color: $white !default;
 $base-font-family: $base-font-sans-serif;
 
 // Container
-$base-max-width: 1170px !default;
+$base-max-width: 1200px !default;
 $base-padding: 0 15px !default;
 
+// form
+$base-form-bg-color: $light-gray;
+$base-form-color: $medium-gray;
+$base-input-border-radius: 5px 5px 5px 5px;
+$base-form-max-width: 770px;
+$base-form-height: 60px;
+$base-form-border-radius: 5px;
+$base-input-padding: 0 340px 0 30px;
+
 // Links
-$base-link-color: $pink !default;
+$base-link-color: $white !default;
 $base-link-font-weight: 400 !default;
-$base-link-hover-color: $pink !default;
+$base-link-hover-color: $red !default;
 
 // Buttons
-$btn-color: $white !default;
-$btn-border-radius: 24px !default;
-$btn-padding: 15px 15px !default;
-$btn-font-size: 15px !default;
+$btn-color: $light-dark !default;
+$btn-border-radius: 5px !default;
+$btn-padding: 20px 15px !default;
+$btn-font-size: 14px !default;
 $btn-font-weight: 700 !default;
 $btn-line-height: 1 !default;
-$btn-background-color: $pink;
-$btn-min-width: 200px;
+$btn-background-color: transparent;
+$btn-min-width: 310px;
 
 // Headers
-$h1-font-size: 46px !default;
-$h2-font-size: 38px !default;
-$h3-font-size: 15px !default;
+$h1-font-size: 72px !default;
+$h2-font-size: 30px !default;
+$h3-font-size: 14px !default;
 $h4-font-size: 22px !default;
 $h5-font-size: 18px !default;
 $h6-font-size: 14px !default;

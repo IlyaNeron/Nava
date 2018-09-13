@@ -2,22 +2,22 @@
 @import 'vendors/include-media';
 @import 'vendors/icomoon';
 
-@import 'base/mixins';
 @import 'base/variables';
+@import 'base/mixins';
 @import 'base/reset';
 @import 'base/buttons';
 @import 'base/helpers';
 @import 'base/forms';
+@import 'base/typography';
+
+@import 'components/logo';
+@import 'components/banner-section';
+@import 'components/banner-content';
+@import 'components/nav';
+@import 'components/score-section';
 
 @import 'layouts/wrapper';
 @import 'layouts/header';
 @import 'layouts/main';
 @import 'layouts/footer';
-
-
-
-
-
-body {
-  background: skyblue;
-}
+@import 'layouts/container';

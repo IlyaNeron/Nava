@@ -1,4 +1,4 @@
-.button {
+.btn-primary, .btn-secondary {
   color: $btn-color;
   border-radius: $btn-border-radius;
   padding: $btn-padding;
@@ -9,14 +9,27 @@
   background-color: $btn-background-color;
   border: 1px solid transparent;
   outline: none;
-  @include animate(border-radius);
+  @include animate(color background border);
   cursor: pointer;
   min-width: $btn-min-width;
   display: inline-block;
   vertical-align: top;
+  border-radius: 5px;
 
   &:hover {
-    border-radius: 5px;
+    background: $red;
+    color: $white;
   }
 
+}
+
+.btn-secondary {
+  background: $red;
+  color: $white;
+
+  &:hover {
+    background: $white;
+    color: $light-dark;
+  }
+  
 }
