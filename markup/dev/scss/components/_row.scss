@@ -1,0 +1,52 @@
+.row {
+  @include inline-space-reset;
+  padding: 0 0 70px;
+  margin: 0 -15px;
+
+  > li {
+    display: inline-block;
+    padding: 0 15px 30px;
+    @include inline-space;
+    vertical-align: top;
+  }
+
+}
+
+.col-lg {
+  width: (100%/1.5);
+}
+
+.col-md {
+  width: (100%/2);
+}
+
+.col {
+  width: (100%/3);
+}
+
+@include media('<tablet') {
+
+  .row {
+    padding: 0 0 20px;
+  }
+
+}
+
+@include media('<phone') {
+
+  .row {
+    margin: 0;
+
+    > li {
+      padding: 0 0 30px;
+    }
+
+  }
+
+  .col,
+  .col-md,
+  .col-lg {
+    width: 100%;
+  }
+
+}

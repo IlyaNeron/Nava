@@ -1,0 +1,27 @@
+.catalog-section {
+  padding: 180px 0 80px;
+}
+
+@include media('<desktop') {
+
+  .catalog-section {
+    padding: 120px 0 70px;
+  }
+
+}
+
+@include media('<tablet') {
+
+  .catalog-section {
+    padding: 90px 0 50px;
+  }
+
+}
+
+@include media('<phone') {
+
+  .catalog-section {
+    padding: 50px 0 50px;
+  }
+
+}

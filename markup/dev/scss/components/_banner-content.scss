@@ -2,10 +2,102 @@
   display: inline-block;
   vertical-align: middle;
   z-index: 2;
+  padding: 0 15px;
 
   h2 {
     text-transform: uppercase;
     margin: 0 0 90px;
+    font-family: 'Open Sans';
+    color: $light-gray;
+  }
+
+  .btn-secondary {
+    padding: 0;
+    width: auto;
+  }
+
+}
+
+@include media('<tablet') {
+
+  .banner-content {
+
+    h1 {
+      font-size: 48px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 40px;
+    }
+
+    input {
+      height: 45px;
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .banner-content {
+    width: 100%;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 30px;
+    }
+
+    input {
+      height: 45px;
+      font-size: 12px;
+      padding: 0 180px 0 15px;
+    }
+
+    .btn-secondary {
+      min-width: 160px;
+      font-size: 12px;
+    }
+
+  }
+
+}
+
+@include media('<xs-phone') {
+
+  .banner-content {
+    width: 100%;
+
+    h1 {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 30px;
+    }
+
+    input {
+      height: 40px;
+      font-size: 12px;
+      padding: 0 135px 0 15px;
+    }
+
+    .btn-secondary {
+      min-width: 120px;
+      font-size: 12px;
+
+      i {
+        display: none;
+      }
+
+    }
+
   }
 
 }

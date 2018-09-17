@@ -1,0 +1,28 @@
+.soc-icons {
+  @include inline-space-reset;
+  @extend %listreset;
+
+  li {
+    @include inline-space;
+    font-size: 42px;
+    display: inline-block;
+
+    &:not(:last-child) {
+      padding: 0 20px 0 0;
+    }
+
+    a {
+      display: block;
+      color: $medium-gray;
+      background: $white;
+      border-radius: 50%;
+
+      i {
+        display: block;
+      }
+
+    }
+
+  }
+
+}

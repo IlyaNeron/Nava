@@ -1,0 +1,78 @@
+.main-banner-section {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  text-align: center;
+  z-index: 1;
+  padding: 110px 0;
+
+  &:before {
+    content: '';
+    width: 1px;
+    margin: 0 0 0 -5px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 850px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.6)
+  }
+
+}
+
+@include media('<desktop') {
+
+  .main-banner-section {
+    padding: 130px 0;
+
+    &:before {
+      min-height: 650px;
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .main-banner-section {
+    padding: 90px 0;
+
+    &:before {
+      min-height: 450px;
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .main-banner-section {
+    padding: 90px 0 130px;
+
+    &:before {
+      content: none;
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .main-banner-section {
+    padding: 90px 0 90px;
+  }
+
+}

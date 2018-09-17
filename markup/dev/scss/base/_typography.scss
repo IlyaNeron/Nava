@@ -12,7 +12,7 @@ h6,
 .h6,
 .h {
   font-family: $headings-font-family;
-  line-height: 1;
+  line-height: $headings-line-height;
   margin: 0 0 30px;
   color: $light-gray;
 
@@ -29,6 +29,7 @@ h1,
   color: $white;
   margin: 0 0 25px;
   text-transform: uppercase;
+  letter-spacing: 5px;
 
   mark {
     background: transparent;
@@ -41,13 +42,14 @@ h1,
 h2,
 .h2 {
   font-size: $h2-font-size;
-  color: $light-gray;
+  color: $light-dark;
   font-weight: 400;
 }
 
 h3,
 .h3 {
   font-size: $h3-font-size;
+  font-weight: 400;
 }
 
 h4,
@@ -84,36 +86,6 @@ p {
 
   &:last-child {
     margin: 0;
-  }
-
-}
-
-blockquote {
-  margin: 0 100px;
-  color: $white;
-  font-size: 25px;
-  font-style: italic;
-
-  cite {
-    padding-top: 40px;
-  }
-
-}
-
-@include media("<tablet") {
-
-  blockquote {
-    line-height: 1.2;
-    margin: 0 30px;
-
-    q {
-      font-size: 15px;
-    }
-
-    cite {
-      font-size: 15px;
-    }
-
   }
 
 }

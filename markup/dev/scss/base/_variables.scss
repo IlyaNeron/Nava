@@ -1,21 +1,17 @@
-
-$breakpoints: (
-  "xs-phone": 480px,
-  "phone": 768px,
-  "tablet": 1024px,
-  "desktop": 1200px,
-  "widescreen": 1800px
-);
+$breakpoints: ("xs-phone": 480px,
+"phone": 768px,
+"tablet": 1024px,
+"desktop": 1200px,
+"widescreen": 1800px);
 
 // keywords
-$media-expressions: (
-  "screen": "screen",
-  "print": "print",
-  "handheld": "handheld",
-  "landscape": "(orientation: landscape)",
-  "portrait": "(orientation: portrait)",
-  "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
-  "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)"
+$media-expressions: ("screen": "screen",
+"print": "print",
+"handheld": "handheld",
+"landscape": "(orientation: landscape)",
+"portrait": "(orientation: portrait)",
+"retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+"retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)"
 );
 
 // ligatured operators ≥ ≤
@@ -28,7 +24,11 @@ $medium-gray: #717171;
 $light-gray: #f9fafe;
 
 // Fonts
-$base-font-sans-serif: "Open Sans", "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
+$base-font-sans-serif: "Open Sans",
+"Raleway",
+"Helvetica Neue",
+"Helvetica",
+sans-serif;
 
 // Body
 $base-background-color: $white !default;
@@ -36,11 +36,11 @@ $font-size-base: 14px !default;
 $font-weight-base: 400 !default;
 $base-line-height: 1.5 !default;
 $base-min-width: 320px !default;
-$base-color: $white !default;
+$base-color: $light-dark !default;
 $base-font-family: $base-font-sans-serif;
 
 // Container
-$base-max-width: 1200px !default;
+$base-max-width: 1230px !default;
 $base-padding: 0 15px !default;
 
 // form
@@ -48,9 +48,9 @@ $base-form-bg-color: $light-gray;
 $base-form-color: $medium-gray;
 $base-input-border-radius: 5px 5px 5px 5px;
 $base-form-max-width: 770px;
-$base-form-height: 60px;
+$base-input-height: 60px;
 $base-form-border-radius: 5px;
-$base-input-padding: 0 340px 0 30px;
+$base-input-padding: 0 230px 0 30px;
 
 // Links
 $base-link-color: $white !default;
@@ -60,12 +60,13 @@ $base-link-hover-color: $red !default;
 // Buttons
 $btn-color: $light-dark !default;
 $btn-border-radius: 5px !default;
-$btn-padding: 20px 15px !default;
+$btn-padding: 22px 15px !default;
 $btn-font-size: 14px !default;
 $btn-font-weight: 700 !default;
 $btn-line-height: 1 !default;
 $btn-background-color: transparent;
 $btn-min-width: 310px;
+$btn-border: 1px solid rgba(38, 38, 38, 0.3);
 
 // Headers
 $h1-font-size: 72px !default;
@@ -74,4 +75,5 @@ $h3-font-size: 14px !default;
 $h4-font-size: 22px !default;
 $h5-font-size: 18px !default;
 $h6-font-size: 14px !default;
-$headings-font-family: $base-font-sans-serif !default;
+$headings-line-height: 1.5;
+$headings-font-family: 'Raleway' !default;

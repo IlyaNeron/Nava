@@ -3,31 +3,36 @@
   max-width: $base-form-max-width;
   margin: 0 auto;
   position: relative;
-  height: $base-form-height;
   border-radius: $base-form-border-radius;
 
-  input {
-    color: $base-form-color;
-    border-radius: $base-input-border-radius;
-    border: 1px solid transparent;
-    padding: $base-input-padding;
-    text-transform: uppercase;
-    outline: none;
-    @include size(100%, 100%);
-  }
-
-  .btn-primary {
+  .btn-secondary {
     position: absolute;
     right: 0;
     top: 0;
     bottom: 0;
     min-width: 200px;
     border-radius: 0 5px 5px 0;
+    width: auto;
 
     &:hover {
       background: $light-dark;
       color: $white;
     }
+
+    i {
+      padding-right: 10px;
+    }
+
   }
 
+}
+
+input {
+  color: $base-form-color;
+  border-radius: $base-input-border-radius;
+  border: 1px solid transparent;
+  padding: $base-input-padding;
+  text-transform: uppercase;
+  outline: none;
+  @include size(100%, $base-input-height);
 }
