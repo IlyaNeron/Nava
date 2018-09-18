@@ -27,7 +27,12 @@
 @include media('<tablet') {
 
   .row {
-    padding: 0 0 20px;
+    margin: 0 -10px 20px;
+
+    .col {
+      padding: 0 10px 20px;
+    }
+
   }
 
 }

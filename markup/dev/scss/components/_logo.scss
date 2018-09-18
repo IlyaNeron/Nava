@@ -12,3 +12,11 @@
   }
 
 }
+
+@include media('<xs-phone') {
+
+  .logo {
+    width: 150px;
+  }
+
+}

@@ -127,7 +127,7 @@
 @include media('<tablet') {
 
   .nav {
-    padding: 10px 0;
+    padding: 10px 0 0;
 
     &-opener {
       display: block;
@@ -179,6 +179,14 @@
 
         }
 
+        a {
+
+          &:hover {
+            color: $dark-gray;
+          }
+
+        }
+
       }
 
       .btn-primary {
@@ -186,6 +194,12 @@
         margin: 0 auto;
         font-size: 24px;
         min-width: 100%;
+
+        &:hover {
+          color: $dark-gray;
+          border-color: $dark-gray;
+        }
+
       }
 
       .nav-active & {
@@ -200,6 +214,14 @@
 
     }
 
+  }
+
+}
+
+@include media('<xs-phone') {
+
+  .nav {
+    padding: 5px 0 0;
   }
 
 }

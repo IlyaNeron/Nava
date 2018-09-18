@@ -41,7 +41,7 @@
     }
 
     &:hover {
-      background: $light-dark;
+      background: $dark-gray;
     }
 
   }
@@ -93,11 +93,18 @@
 
     .item-text {
       font-size: 16px;
+      left: 20px;
+      bottom: 20px;
 
       h3 {
         font-size: 20px;
       }
 
+    }
+
+    .item-ind {
+      top: 20px;
+      left: 20px;
     }
 
   }

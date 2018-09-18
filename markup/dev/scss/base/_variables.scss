@@ -21,13 +21,15 @@ $media-expressions: (
 
 // Colors
 $white: #fff !default;
-$light-dark: #343434 !default;
+$dark-gray: #343434 !default;
 $red: #e7434e !default;
 $medium-gray: #717171;
 $light-gray: #f9fafe;
+$medium-dark: #555;
 
 // Fonts
 $base-font-sans-serif: "Open Sans", "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
+$second-font-family: "Raleway", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
 
 // Body
 $base-background-color: $white !default;
@@ -35,9 +37,8 @@ $font-size-base: 14px !default;
 $font-weight-base: 400 !default;
 $base-line-height: 1.5 !default;
 $base-min-width: 320px !default;
-$base-color: $light-dark !default;
+$base-color: $dark-gray !default;
 $base-font-family: $base-font-sans-serif;
-$second-font-family: "Raleway";
 
 // Container
 $base-max-width: 1230px !default;
@@ -53,9 +54,9 @@ $form-element-focus-border-color: $red !default;
 $form-element-font-size: 14px !default;
 $form-element-line-height: 1 !default;
 $form-element-font-weight: 400 !default;
-$form-element-font-family: 'Raleway';
-$placeholder-color: $light-dark !default;
-$placeholder-hover-color: $red;
+$form-element-font-family: $second-font-family;
+$placeholder-color: $dark-gray !default;
+$placeholder-hover-color: $medium-gray;
 
 // Links
 $base-link-color: $white !default;
@@ -63,7 +64,7 @@ $base-link-font-weight: 400 !default;
 $base-link-hover-color: $red !default;
 
 // Buttons
-$btn-color: $light-dark !default;
+$btn-color: $dark-gray !default;
 $btn-border-radius: 5px !default;
 $btn-padding: 22px 15px !default;
 $btn-font-size: 14px !default;
@@ -71,7 +72,7 @@ $btn-font-weight: 700 !default;
 $btn-line-height: 1 !default;
 $btn-background-color: transparent;
 $btn-min-width: 310px;
-$btn-border: 1px solid rgba(38, 38, 38, 0.3);
+$btn-border: 1px solid rgba($dark-gray, 0.3);
 $btn-secondary-border: 1px solid transparent;
 
 // Headers
@@ -82,5 +83,5 @@ $h4-font-size: 22px !default;
 $h5-font-size: 18px !default;
 $h6-font-size: 14px !default;
 $headings-line-height: 1;
-$headings-font-family: 'Raleway' !default;
-$headings-second-font-family: 'Open Sans';
+$headings-font-family: $second-font-family !default;
+$headings-second-font-family: $base-font-sans-serif;
