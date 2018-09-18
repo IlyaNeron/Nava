@@ -1,11 +1,12 @@
 .soc-icons {
   @include inline-space-reset;
   @extend %listreset;
+  margin: 0 0 30px;
 
   li {
-    @include inline-space;
-    font-size: 42px;
+    @include inline-space(42px);
     display: inline-block;
+    vertical-align: top;
 
     &:not(:last-child) {
       padding: 0 20px 0 0;
@@ -21,8 +22,20 @@
         display: block;
       }
 
+      &:hover {
+        color: $red;
+      }
+
     }
 
+  }
+
+}
+
+@include media('<phone') {
+
+  .soc-icons {
+    margin: 0 0 15px;
   }
 
 }

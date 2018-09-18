@@ -1,13 +1,13 @@
 .head-block {
   max-width: 830px;
   text-align: center;
-  margin: 0 auto 80px;
+  margin: 0 auto 55px;
   font-size: 16px;
   color: $medium-gray;
 
   h2 {
     text-transform: uppercase;
-    margin: 0 0 30px;
+    margin: 0 0 25px;
   }
 
 }
@@ -29,12 +29,10 @@
 @include media('<xs-phone') {
 
   .head-block {
-    margin: 0 auto 50px;
     font-size: 14px;
 
     h2 {
       font-size: 18px;
-      margin: 0 0 15px;
     }
 
   }

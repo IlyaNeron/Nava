@@ -17,13 +17,12 @@
   letter-spacing: 0;
 }
 
-
 // inline-space
 // this mixin used for add default text-styles to the child-elements
 //
-@mixin inline-space {
+@mixin inline-space($size) {
   line-height: 1;
-  font-size: 16px;
+  font-size: $size;
   letter-spacing: normal;
 }
 
@@ -95,36 +94,11 @@ $animation-speed: .3s !default;
 ///   }
 ///
 @mixin placeholder {
-  &::-webkit-input-placeholder {
-    @content
-  }
-
-  ;
-
-  &::-moz-placeholder {
-    opacity: 1;
-    @content
-  }
-
-  ;
-
-  &:-moz-placeholder {
-    @content
-  }
-
-  ;
-
-  &:-ms-input-placeholder {
-    @content
-  }
-
-  ;
-
-  &.placeholder {
-    @content
-  }
-
-  ;
+  &::-webkit-input-placeholder {@content};
+  &::-moz-placeholder {opacity: 1; @content};
+  &:-moz-placeholder {@content};
+  &:-ms-input-placeholder {@content};
+  &.placeholder {@content};
 }
 
 /// Creates a visual triangle.
@@ -225,5 +199,5 @@ $animation-speed: .3s !default;
     border-style: solid;
     border-width: $width $height;
   }
-  
+
 }

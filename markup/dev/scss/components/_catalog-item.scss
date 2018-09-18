@@ -27,25 +27,32 @@
   .item-ind {
     position: absolute;
     top: 30px;
-    left: 20px;
+    left: 27px;
     font-weight: 700;
     background: $red;
-    padding: 10px 15px 10px 40px;
+    padding: 13px 15px 13px 40px;
     border-radius: 5px;
     z-index: 2;
+    @include animate(background);
 
     i {
       position: absolute;
       left: 15px;
     }
 
+    &:hover {
+      background: $light-dark;
+    }
+
   }
 
   .item-text {
     position: absolute;
-    bottom: 30px;
-    left: 20px;
+    bottom: 25px;
+    left: 25px;
     z-index: 2;
+    font-size: 20px;
+    font-family: $second-font-family;
 
     h3 {
       font-size: 30px;
@@ -55,14 +62,13 @@
 
     ul {
       @include inline-space-reset;
-      list-style: none;
-      padding: 0;
+      @extend %listreset;
 
       li {
-        @include inline-space;
+        @include inline-space(16px);
         display: inline-block;
         position: relative;
-        padding-left: 20px;
+        padding-left: 30px;
 
         &:not(:last-child) {
           padding-right: 30px;
@@ -90,6 +96,35 @@
 
       h3 {
         font-size: 20px;
+      }
+
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .catalog-item {
+
+    .item-ind {
+      top: 15px;
+      left: 15px;
+      padding: 10px 15px 10px 40px;
+    }
+
+    .item-text {
+      font-size: 16px;
+      left: 15px;
+      bottom: 15px;
+
+      ul {
+
+        li:not(:last-child) {
+          padding-right: 15px;
+        }
+
       }
 
     }

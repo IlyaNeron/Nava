@@ -7,7 +7,7 @@
     height: 20px;
     width: 25px;
 
-    &:hover {
+    &:hover, &:focus {
       color: $white;
     }
 
@@ -89,17 +89,19 @@
 
       li {
         display: inline-block;
-        @include inline-space;
+        @include inline-space(16px);
         color: $white;
         text-transform: uppercase;
         vertical-align: middle;
+        font-family: $second-font-family;
 
         &:not(:last-child) {
-          padding-right: 45px;
+          padding-right: 50px;
         }
 
         a {
           font-weight: 700;
+          display: block;
         }
 
       }

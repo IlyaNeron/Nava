@@ -1,49 +1,13 @@
 .score-section {
   z-index: 2;
-  margin-top: -74px;
+  margin-top: -70px;
   position: relative;
-
-  .score-items {
-    @include inline-space-reset;
-    padding: 30px 0;
-    box-shadow: 0px 0px 30px rgba(52, 52, 52, 0.15);
-    background: $white;
-
-    li {
-      @include inline-space;
-      display: inline-block;
-      width: (100%/4);
-      text-align: center;
-      padding: 10px 15px;
-      font-size: 18px;
-      color: $medium-gray;
-      vertical-align: top;
-
-      &:not(:last-child) {
-        border-right: 1px solid rgba(113, 113, 113, 0.6);
-      }
-
-      b {
-        display: block;
-        margin: 0 0 20px;
-        font-size: 30px;
-      }
-
-    }
-
-  }
-
 }
 
 @include media('<tablet') {
 
   .score-section {
     margin-top: -65px;
-
-    .score-items {
-      padding: 20px 0;
-    }
-
   }
 
 }
@@ -51,50 +15,7 @@
 @include media('<phone') {
 
   .score-section {
-    margin-top: -65px;
-
-    .score-items {
-      padding: 20px 0;
-
-      li {
-        width: 50%;
-
-        &:nth-child(2n) {
-          border: none;
-        }
-
-      }
-
-    }
-
-  }
-
-}
-
-@include media('<xs-phone') {
-
-  .score-section {
-    margin-top: -65px;
-
-    .score-items {
-      padding: 20px 0;
-
-      li {
-        width: 50%;
-        font-size: 16px;
-
-        &:nth-child(2n) {
-          border: none;
-        }
-
-        b {
-          font-size: 24px;
-        }
-
-      }
-
-    }
-
+    margin-top: 0;
   }
 
 }

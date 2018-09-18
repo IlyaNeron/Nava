@@ -1,13 +1,11 @@
-.btn-primary,
-.btn-secondary {
-  color: $btn-color;
+.btn {
   border-radius: $btn-border-radius;
   padding: $btn-padding;
   font-size: $btn-font-size;
   font-weight: $btn-font-weight;
   line-height: $btn-line-height;
+  font-family: $second-font-family;
   text-transform: uppercase;
-  background-color: $btn-background-color;
   border: $btn-border;
   outline: none;
   @include animate(color background border);
@@ -16,39 +14,55 @@
   display: inline-block;
   vertical-align: top;
 
-  &:hover {
+  &-primary {
+    color: $btn-color;
+    background-color: $btn-background-color;
+
+    &:hover {
+      background: $red;
+      color: $white;
+    }
+
+  }
+
+  &-secondary {
     background: $red;
     color: $white;
+    border: $btn-secondary-border;
+
+    &:hover {
+      background: $light-dark;
+      color: $white;
+    }
+
   }
 
 }
 
-.btn-secondary {
-  background: $red;
-  color: $white;
-
-  &:hover {
-    background: $white;
-    color: $light-dark;
-  }
-
-}
 
 @include media('<tablet') {
 
-  .btn-primary,
-  .btn-secondary {
-    padding: 15px;
+  .btn {
+
+    &-primary,
+    &-secondary {
+      padding: 15px;
+    }
+
   }
 
 }
 
 @include media('<phone') {
 
-  .btn-primary,
-  .btn-secondary {
-    width: 100%;
-    min-width: auto;
+  .btn {
+
+    &-primary,
+    &-secondary {
+      width: 100%;
+      min-width: auto;
+    }
+
   }
 
 }

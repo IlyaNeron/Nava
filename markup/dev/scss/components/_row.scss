@@ -1,12 +1,12 @@
 .row {
   @include inline-space-reset;
-  padding: 0 0 70px;
-  margin: 0 -15px;
+  @extend %listreset;
+  margin: 0 0 70px;
 
-  > li {
+  .col {
+    @include inline-space(16px);
     display: inline-block;
     padding: 0 15px 30px;
-    @include inline-space;
     vertical-align: top;
   }
 
@@ -20,7 +20,7 @@
   width: (100%/2);
 }
 
-.col {
+.col-sm {
   width: (100%/3);
 }
 
@@ -37,7 +37,7 @@
   .row {
     margin: 0;
 
-    > li {
+    .col {
       padding: 0 0 30px;
     }
 

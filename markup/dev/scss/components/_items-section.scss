@@ -1,10 +1,22 @@
 .items-section {
   padding: 100px 0 90px;
 
+  .head-block {
+    margin: 0 auto 85px;
+  }
+
   .catalog-item {
 
     .item-ind {
-      padding: 15px;
+      padding: 13px;
+    }
+
+  }
+
+  .section-bottom {
+
+    .btn-primary {
+      min-width: 230px;
     }
 
   }

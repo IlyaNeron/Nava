@@ -1,0 +1,74 @@
+.footer-list {
+  @include inline-space-reset;
+  margin: 0 -15px;
+
+  .list-col {
+    @include inline-space(14px);
+    width: 20%;
+    display: inline-block;
+    padding: 0 15px 30px;
+    vertical-align: top;
+
+    &-lg {
+      width: 40%;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font: 700 14px $headings-second-font-family, sans-serif;
+      margin: 0 0 25px;
+    }
+
+    &-content {
+      @extend %listreset;
+
+      li {
+
+        &:not(:last-child) {
+          padding: 0 0 20px;
+        }
+
+        a {
+          display: block;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .footer-list {
+    margin: 0 -10px;
+
+    .list-col {
+      padding: 0 10px 30px;
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .footer-list {
+    margin: 0;
+    text-align: center;
+
+    .list-col {
+      width: 100%;
+      padding: 0;
+
+      &:not(:last-child) {
+        padding: 0 0 30px;
+      }
+
+    }
+
+  }
+
+}
